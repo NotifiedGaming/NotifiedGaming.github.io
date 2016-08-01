@@ -12,3 +12,8 @@ body {
   font-family: 'Reem Kufi', sans-serif;
   font-size: 2em;
 }
+#music {
+  position: fixed;
+  bottom: -500%;
+  opacity: 0;
+}
