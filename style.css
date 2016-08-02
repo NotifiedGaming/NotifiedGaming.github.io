@@ -6,7 +6,8 @@ body {
   height: 100%;
   width: 100%;
   background-color: #575656;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   color: #EF8D3E;
   font-family: 'Reem Kufi', sans-serif;
 }
@@ -28,25 +29,87 @@ body {
   position: relative;
   top: 0px;
 }
-#menu a {
+#menu.spacer {
+  font-family: monospace;
+  font-style: italic;
+}
+a {
   color: #EF8D3E;
   text-decoration: none;
 }
-#menu a:hover {
+a:hover {
   text-decoration: underline;
 }
-span.left {
+.left {
   float: left;
 }
-span.right {
+.right {
   float: right;
 }
 
 #about {
   text-align: center;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
 }
 
 .title {
   color: #E4CC37;
   font-weight: bolder;
 }
+
+#social {
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+}
+
+#social.right {
+  float: none;
+}
+
+.section {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 100%;
+  float: none;
+  margin: 0 auto;
+  min-height: 350px;
+}
+
+#schedule {
+ width: 100%;
+ text-align: center;
+}
+
+#contact, #footer {
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 745px) {
+  #social {
+    width: 745px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 820px) {
+  #scheduleframe {
+    width: 100%;
+  }
+}
+
+
+
+
+/*
+Instagram badge
+*/
+
+.ig-b- { display: inline-block; }
+.ig-b- img { visibility: hidden; }
+.ig-b-:hover { background-position: 0 -60px; } .ig-b-:active { background-position: 0 -120px; }
+.ig-b-v-24 { width: 137px; height: 24px; background: url(https://badges.instagram.com/static/images/ig-badge-view-sprite-24.png) no-repeat 0 0; }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+.ig-b-v-24 { background-image: url(https://badges.instagram.com/static/images/ig-badge-view-sprite-24@2x.png); background-size: 160px 178px; } }
